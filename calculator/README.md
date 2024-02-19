@@ -2,7 +2,7 @@
 
 ## Link
 
-https://enzhe86.github.io/front-end/calculator
+https://Enzhe86.github.io/front-end/calculator
 
 ## Description
 
@@ -16,4 +16,3 @@ To use the calculator, simply clone or download the repository and open the *ind
 
 1. The show function takes a value as a parameter and appends this value to the current value of an element with the id display;
 2. The calculate function performs math operations such as division, addition, subtraction, and  multiplication and updates the display with the evaluation result;
-
