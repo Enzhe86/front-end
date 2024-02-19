@@ -1,1 +1,1 @@
-https://Enzhe86.github.io/front-end/calculator
+https://Enzhe86.github.io/front-end/tree/calculator
