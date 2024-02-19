@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <table class="calculator">
+        <tbody>
+            <tr>
+                <td colspan="3"><input type="text" class="calculator__display" id="display" readonly></td>
+                <td><input type="button" class="calculator__operator" value="C" onclick="clearScr" id="clear"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="calculator__number" value="1" onclick="show('1')"></td>
+                <td><input type="button" class="calculator__number" value="2" onclick="show('2')"></td>
+                <td><input type="button" class="calculator__number" value="3" onclick="show('3')"></td>
+                <td><input type="button" class="calculator__operator" value="/" onclick="show('/')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="calculator__number" value="4" onclick="show('4')"></td>
+                <td><input type="button" class="calculator__number" value="5" onclick="show('5')"></td>
+                <td><input type="button" class="calculator__number" value="6" onclick="show('6')"></td>
+                <td><input type="button" class="calculator__operator" value="-" onclick="show('-')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="calculator__number" value="7" onclick="show('7')"></td>
+                <td><input type="button" class="calculator__number" value="8" onclick="show('8')"></td>
+                <td><input type="button" class="calculator__number" value="9" onclick="show('9')"></td>
+                <td><input type="button" class="calculator__operator" value="+" onclick="show('+')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" class="calculator__number" value="." onclick="show('.')"></td>
+                <td><input type="button" class="calculator__number" value="0" onclick="show('0')"></td>
+                <td><input type="button" class="calculator__operator" value="=" onclick="calculate()" id="result"></td>
+                <td><input type="button" class="calculator__operator" value="*" onclick="show('*')"></td>
+            </tr>
+        </tbody>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>
