@@ -5,6 +5,6 @@ function show(value) {
 function calculate() {
     let displayValue = document.getElementById('display').value;
     let result = eval(displayValue);
-    return document.getElementById('display').value = result;
+    document.getElementById('display').value = result;
 }
 
