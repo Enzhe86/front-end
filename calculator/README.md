@@ -2,7 +2,7 @@
 
 ## Link
 
-https://enzhe86.github.io/frontend/calculator
+https://enzhe86.github.io/front-end/calculator
 
 ## Description
 
