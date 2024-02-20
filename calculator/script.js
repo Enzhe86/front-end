@@ -8,3 +8,6 @@ function calculate() {
     return document.getElementById('display').value = result;
 }
 
+function clearScr() {
+    document.getElementById('display').value = '';
+}
