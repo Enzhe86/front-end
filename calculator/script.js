@@ -1,20 +1,13 @@
-function show(value) {
+const show = function(value) {
   document.getElementById('display').value += value;
 }
 
-function calculate() {
-  let displayValue = document.getElementById('display').value;
-  if (displayValue.match(/[\+\-\*\/]{2,}/)) {
-    alert('The expression is incorrect');
-    clearScr();
-  } else {
-    let result = eval(displayValue);
-    document.getElementById('display').value = result;
-  }
-}
-
-function clearScr() {
+const clearScr = function() {
   document.getElementById('display').value = '';
 }
 
-
+const calculate = function() {
+  let displayValue = document.getElementById('display').value;
+  let result = Function(`"use strict"; return (${displayValue})`)();
+  document.getElementById('display').value = result;
+}
